@@ -63,4 +63,4 @@ function popup(el) {
 }
 
 // EXECUTION
-document.addEventListener('DOMContentLoaded', activeScript());
+document.addEventListener('DOMContentLoaded', activeScript);
