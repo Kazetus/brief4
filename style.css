@@ -224,3 +224,68 @@ footer{
 footer p{
     margin: auto;
 }
+
+/*  CLASSES AJOUTEES   */
+.popUp {
+    width : 100vw;
+    height : 100vh;
+    background : rgba(0,0,0,0.5);
+    position : fixed;
+    left : 0;
+    top : 0;
+}
+.popUp div {
+    background: linear-gradient(154deg, #f1f1f1 50%, #e2d2d2 50%);; 
+    width: 1200px;
+    height: 600px;
+    position: relative;
+    top: calc(50% - 300px);
+    left: calc(50% - 600px);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.popUp h2 {
+    width: 100%;
+    font-size: ;
+    text-align: center;
+}
+.popUp img {
+    width: 50%;
+}
+.popUp p {
+    width: 40%;
+    font-size: 20px;
+}
+.inactive {
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    #carrousel {
+        margin: 2em 0;
+    }
+    .popUp div {
+        padding: 1em;
+        width: 800px;
+        height: auto;
+        left: calc(50% - 400px);
+    }
+    .popUp img {
+        width: 80%;
+    }
+    .popUp p {
+        text-align: center;
+        width: 100%
+    }
+    section:nth-child(3){
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 800px) {
+    .popUp div {
+        width: 400px;
+        left: calc(50% - 200px);
+    }
+}
