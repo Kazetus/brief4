@@ -55,7 +55,7 @@ function definePopUp() {
 function activeButton() {
     Object.values(Container.children).map(el => {
         el.children[3].addEventListener('click', () => popup(el));
-    })
+    });
 }
 function popup(el) {
     divPopUp.classList.remove('inactive');
