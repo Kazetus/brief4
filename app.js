@@ -19,7 +19,6 @@ function moveRight(){
         p--;
     }
     translateImage();
-    afficherMasquer();
 }
 
 function moveLeft(){
@@ -27,11 +26,12 @@ function moveLeft(){
         p++;
     }
     translateImage();
-    afficherMasquer();
 }
 function translateImage() {
     Container.style.transition = "transform 0.5s ease";
     Container.style.transform = `translateX(${200*p}px)`;
+    afficherMasquer();
+
 }
 function afficherMasquer() {
     if( p == 0) {
